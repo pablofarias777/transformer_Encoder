@@ -32,3 +32,12 @@ X = np.expand_dims(X, axis=0)
 
 print("\nShape do tensor X:")
 print(X.shape)
+
+from attention import SelfAttention
+
+attention = SelfAttention(d_model)
+
+X_att = attention.forward(X)
+
+print("\nShape saída attention:")
+print(X_att.shape)
