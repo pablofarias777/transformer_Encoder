@@ -59,3 +59,9 @@ X_ffn = ffn.forward(X_norm)
 
 print("\nShape saída FFN:")
 print(X_ffn.shape)
+
+from encoder import Encoder
+encoder = Encoder(d_model, num_layers=6)
+Z = encoder.forward(X)
+print("\nShape saída final do Encoder:")
+print(Z.shape)
