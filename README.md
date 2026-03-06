@@ -39,3 +39,18 @@ python main.py
 # Saída esperada
 
 O programa irá mostrar os shapes dos tensores durante a execução, por exemplo:
+
+Shape do tensor X:
+(1, 4, 64)
+
+Shape saída final do Encoder:
+(1, 4, 64)
+
+
+Isso indica que o Encoder manteve a dimensão do tensor após passar pelas camadas.
+
+---
+
+# Autor
+
+Pablo Farias
