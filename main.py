@@ -50,3 +50,12 @@ X_norm = layer_norm(X_res)
 
 print("\nShape após LayerNorm:")
 print(X_norm.shape)
+
+from ffn import FeedForward
+
+ffn = FeedForward(d_model)
+
+X_ffn = ffn.forward(X_norm)
+
+print("\nShape saída FFN:")
+print(X_ffn.shape)
