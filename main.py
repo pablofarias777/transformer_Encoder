@@ -41,3 +41,12 @@ X_att = attention.forward(X)
 
 print("\nShape saída attention:")
 print(X_att.shape)
+
+from utils import layer_norm
+
+X_res = X + X_att
+
+X_norm = layer_norm(X_res)
+
+print("\nShape após LayerNorm:")
+print(X_norm.shape)
